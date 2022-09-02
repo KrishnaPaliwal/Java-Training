@@ -16,5 +16,5 @@ public class CollectionsDemo_nCopies {
 		   while (itr.hasNext()){
 		   System.out.println(itr.next());
 		   }
-		   }  
+		   }   
 }
