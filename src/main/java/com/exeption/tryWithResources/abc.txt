@@ -1,0 +1,2 @@
+First message Writing to file : Welcome to Java Training 
+Second message Writing to file : This is try with resources example
