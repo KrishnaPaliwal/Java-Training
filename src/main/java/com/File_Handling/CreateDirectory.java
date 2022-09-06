@@ -16,27 +16,28 @@ public class CreateDirectory {
 	public static void main(String args[]) {
 		// String dirname = "D:/JAVA/File Input and OutputStream/New folder by mkdirs
 		// method/g/g/g/g/g/";
-		File file1 = new File("D:/JAVA/File Input and OutputStream/New folder by mkdirs method/g/g/g/g/");
+		File file1 = new File("D:\\Workspaces\\JavaTraining\\Java-Training\\src\\main\\java\\com\\File_Handling\\mydir\\myfile.txt");
 
 // mkdirs method Create directories now.
 		file1.mkdirs();
 
-		File file2 = new File("D:/JAVA/File Input and OutputStream/New folder by mkdir method/");
-
+		//File file2 = new File("D:/JAVA/File Input and OutputStream/New folder by mkdir method/");
 // mkdir method Create one directory only.
-		file2.mkdir();
-		File file3 = new File("D:/JAVA/File Input and OutputStream/Krishna6.docx");
+		//file2.mkdir();
+		String fileSeparator = System.getProperty("file.separator");
+		File file3 = new File("D:\\Workspaces\\tetttt\\ffffs.txt");
 		try {
+			file3.mkdir();
 			System.out.println(file3.createNewFile());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			System.out.println("Please provide correct path");
+			e.printStackTrace();
 		}
 
 		System.out.println(file3.getPath());
 
 		file3.getAbsoluteFile();
-		String fileSeparator = System.getProperty("file.separator");
 
 	}
 

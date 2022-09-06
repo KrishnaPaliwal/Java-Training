@@ -15,7 +15,7 @@ public class ReadANDWrite {
 		try
   		{
   		//Reading file and writing line by line using Scanner class and on console
-  			FileInputStream fis1 = new FileInputStream("D:\\JAVA\\File Input and OutputStream\\input1.txt");      			
+  			FileInputStream fis1 = new FileInputStream("D:\\Workspaces\\JavaTraining\\Java-Training\\pom.xml");      			
   			Scanner sc1 = new Scanner(fis1);
   			while(sc1.hasNextLine())
   					{

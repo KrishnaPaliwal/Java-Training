@@ -11,7 +11,7 @@ public class ReadfileClass {
 	public static void main(String [] args) throws IOException {
 		
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(new File("F:\\Learning\\MyTraining\\pom.xml")));
+			BufferedReader br = new BufferedReader(new FileReader(new File("D:\\\\Workspaces\\\\JavaTraining\\\\Java-Training\\\\pom.xml")));
 			String line;
 			while((line = br.readLine()) != null)
 			{

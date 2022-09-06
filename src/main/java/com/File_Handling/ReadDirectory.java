@@ -2,6 +2,7 @@ package com.File_Handling;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /*
  * Listing Directories:
@@ -18,7 +19,7 @@ public class ReadDirectory {
             
       try{      
          // create new file object
-         file = new File("D:/JAVA/JAVA STUDY MATERIAL");
+         file = new File("D:\\Workspaces\\JavaTraining\\Java-Training\\src");
                                  
          // array of files and directory
          paths = file.list();
@@ -30,9 +31,13 @@ public class ReadDirectory {
             System.out.println(path);
          }
          
+         Date date = new Date();
+         System.out.println(date); 
   // file.lastModified method
          SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
-         System.out.println(sdf.format(file.lastModified()));
+         
+         sdf.format(date);
+         System.out.println(sdf.format(date));
          
       }catch(Exception e){
          // if any error occurs
