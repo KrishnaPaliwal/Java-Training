@@ -1,4 +1,4 @@
-package com.multitreading;
+package com.multithreading;
 
 public class ThreadTest {
 
