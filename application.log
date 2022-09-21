@@ -1,0 +1,25 @@
+2022-09-21 14:16:41 INFO  Log4JLoggingExample:14 - info
+2022-09-21 14:16:42 DEBUG Log4JLoggingExample:15 - debug
+2022-09-21 14:16:42 ERROR Log4JLoggingExample:16 - error
+2022-09-21 14:17:02 INFO  MapDemoViaLogging:27 - TreeMap
+2022-09-21 14:17:02 INFO  MapDemoViaLogging:28 - {AA=Tree Mapjhjhj Example, Detail=Tree Mapjhjhj Example, Details=Tree Map Example, name=TreeMap}
+2022-09-21 14:17:02 INFO  MapDemoViaLogging:29 - [AA, Detail, Details, name]
+2022-09-21 14:17:02 INFO  MapDemoViaLogging:30 - [Tree Mapjhjhj Example, Tree Mapjhjhj Example, Tree Map Example, TreeMap]
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:39 - lhmap:{name=LinkedHashMap, Details=LinkedHashMap Example, null=null, Null 1=null}
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:49 - LinkedHashMap
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:50 - {name=LinkedHashMap, Details=LinkedHashMap Example through MAP object}
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:51 - [name, Details]
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:52 - [LinkedHashMap, LinkedHashMap Example through MAP object]
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:61 - hmap: {null=null, Details=HashMap Example, Null 1=null, name=HashMap---------------------kriississs----------------------------------}
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:67 - HashMap
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:68 - {Details=HashMap Example, name=HashMap}
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:69 - [Details, name]
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:70 - [HashMap Example, HashMap]
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:77 - TreeMap
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:78 - {Details=TreeMap Example, name=TreeMap}
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:79 - [Details, name]
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:80 - [TreeMap Example, TreeMap]
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:91 - {Details=HashTable Example, name=HashTable}
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:92 - HashTable
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:95 - HashTable Example
+2022-09-21 14:17:03 INFO  MapDemoViaLogging:95 - HashTable

@@ -1,9 +1,8 @@
 package com.controlFlow;
-
 public class ControlFlowStatementExample {
 
-	public static void main(String args[]) {
-
+	  public static void main(String args[]) {
+		  
 		// if-else
 		int i = Integer.parseInt(args[0]);
 		if (i < 10) {

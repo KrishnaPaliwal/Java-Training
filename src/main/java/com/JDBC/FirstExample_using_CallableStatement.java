@@ -11,8 +11,8 @@ import java.sql.Types;
 public class FirstExample_using_CallableStatement {
 	 // JDBC driver name and database URL
 	 static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	 static final String DB_URL = "jdbc:mysql://localhost:3306/test";
-	 Connection conn = null;
+	 static final String DB_URL = "jdbc:mysql://localhost:3306/sakila";
+
 	 //  Database credentials
 	 static final String USER = "root";
 	 static final String PASS = "root";
@@ -22,7 +22,7 @@ public class FirstExample_using_CallableStatement {
 	 PreparedStatement pStmt = null;
 	 try{
 	    //STEP 2: Register JDBC driver
-	    Class.forName("com.mysql.jdbc.Driver");
+	   // Class.forName("com.mysql.jdbc.Driver");
 
 	    //STEP 3: Open a connection
 	    System.out.println("Connecting to database...");
@@ -31,11 +31,13 @@ public class FirstExample_using_CallableStatement {
 	    //STEP 4: Execute a query
 	    System.out.println("Creating prepareStatement...");
 	    
-	   CallableStatement callable = conn.prepareCall("call GetAllProducts()");
-	   callable.registerOutParameter(1, Types.FLOAT);
-	  // callable.registerOutParameter(parameterIndex, OracleTyp.);
-	   System.out.println(callable.getString("first"));
+	   CallableStatement callable = conn.prepareCall("call film_in_stock(?, ?, ?)");
+	   callable.setInt(1, 1);
+	   callable.setInt(2, 1);
+	   callable.registerOutParameter(3, Types.INTEGER);
+	   //callable.registerOutParameter(parameterIndex, OracleTyp.);
 	   callable.execute();
+	   System.out.println(callable.getString(3));
 
 	    //STEP 6: Clean-up environment
 
@@ -62,11 +64,5 @@ public class FirstExample_using_CallableStatement {
 	    }//end finally try
 	 }//end try
 	 System.out.println("Goodbye!");
-	 System.gc();
 	}//end main
-	 
-	 @Override
-	protected void finalize() throws Throwable {
-		 conn.close();
-	}
 }

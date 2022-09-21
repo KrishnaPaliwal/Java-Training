@@ -49,8 +49,8 @@ public class SerializationWithNestedObjectsExample {
 
 	public static void main(String[] args) {
 		Employee object = new Employee("Krishna", 30, 2, "Some Transient Value", 5, "Some Static Value", new Department("IT"));
-		//String filename = "krishna.txt";
-		File filename = new File("krishna2.txt");
+		//String filename = "SerializedObject.txt";
+		File filename = new File("SerializedObject.txt");
 		// Serialization
 		try {
 

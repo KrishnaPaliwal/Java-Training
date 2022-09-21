@@ -9,7 +9,6 @@ public class HelloWorldLambda {
 		String s = helloWorldInterface.sayHelloWorld("Hello", "Wolrd");
 		
 		System.out.println(s);
-		
 
 	}
 }

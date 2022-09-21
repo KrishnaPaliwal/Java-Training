@@ -17,8 +17,7 @@ public class FirstExample_using_Statement {
  Statement stmt = null;
  try{
     //STEP 2: Register JDBC driver
-    Class.forName("com.mysql.jdbc.Driver").newInstance();
-
+    //Class.forName("com.mysql.jdbc.Driver").newInstance();
     //STEP 3: Open a connection
     System.out.println("Connecting to database...");
     conn = DriverManager.getConnection(DB_URL,USER,PASS);
@@ -27,27 +26,26 @@ public class FirstExample_using_Statement {
     System.out.println("Creating statement...");
     stmt = conn.createStatement();
     String sql;
-    sql = "SELECT id, first, last, age FROM Employees";
+    sql = "SELECT id, name, departmentid FROM Employee";
     ResultSet rs = stmt.executeQuery(sql);
 
     //STEP 5: Extract data from result set
     while(rs.next()){
        //Retrieve by column name
        int id  = rs.getInt("id");
-       int age = rs.getInt("age");
-       String first = rs.getString("first");
-       String last = rs.getString("last");
+       String name = rs.getString("name");
+       int departmentid = rs.getInt("departmentid");
 
        //Display values
        System.out.print("ID: " + id);
-       System.out.print(", Age: " + age);
-       System.out.print(", First: " + first);
-       System.out.println(", Last: " + last);
+       System.out.print(", Name: " + name);
+       System.out.print(", departmentid: " + departmentid);
+
     }
     
-    int x = stmt.executeUpdate("update Employees set last = 'Paliwala' where last='Paliwal'");
-    int y = stmt.executeUpdate("delete from Employees where Id=103");
-    int z = stmt.executeUpdate("insert into Employees values (104, 60, 'Mohan', 'Agarwal')");
+    int x = stmt.executeUpdate("update Employee set name = 'Paliwal' where id=4");
+    int y = stmt.executeUpdate("delete from Employee where Id=103");
+    int z = stmt.executeUpdate("insert into Employee values (106, 'Mohan', 5)");
     
     //STEP 6: Clean-up environmentFatma
     rs.close();
